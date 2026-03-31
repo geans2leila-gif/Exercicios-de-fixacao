@@ -50,9 +50,47 @@ if( !CaBoconectado || carregadornaTomada){
 Analogia:O sanduiche so será pronto se tiver pão e tiver recheio*/
 
 /*3- Entrar em uma festa
-Analogia: Você so poderá entra na festa se for maior de 18 anos e tiver identidade.*/
+Analogia: Você so poderá entra na festa se for maior de 18 anos e tiver identidade.*
 
-/*4- Dirigir um carro 
-Analogia: Você so poderá dirigir se for habilitado e tiver com o documento em mãos*/
 
+/*4- Dirigir um carro Analogia: Você so poderá dirigir se for habilitado e tiver com o documento em mãos */
+
+//AND
+let habilitacaoEmMaos = true;
+let habilitado = true;
+if(habilitacaoEmMaos && habilitado){
+    console.log("Pode dirigir");
+}else{
+    console.log("Não pode dirigir");
+}
+// OR
+let HabilitacaoEmMaos = false;
+let Habilitado = true;
+if(HabilitacaoEmMaos || Habilitado){
+    console.log("Pode dirigir");
+}else{
+    console.log("Não pode dirigir");
+}
+// NOT
+let HabilitacaoemMaos = false;
+let HAbilitado = false;
+if(HabilitacaoemMaos || !HAbilitado){
+    console.log("Pode dirigir");
+}else{
+    console.log("Não pode dirigir");
+}
+//SWITCH CASE
+let habilitadO = 2;
+
+swicth (habilitadO){
+    case 1:
+        console.log("NÃO TEM habilitação em mãos")
+        break;
+    case 2:
+         console.log("tem habilitaçao em mãos")
+         break;   
+    default:
+        console.log("NÃo é habilitado")  
+        break;
+}
 //Equipe 3: Rodrigo Campos, Blenda Kettlen e Gean Carlos
